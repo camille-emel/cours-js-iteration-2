@@ -7,9 +7,7 @@
  /**
   * import de la bibliothèque fs et lecture du fichier data.json.
   */
-const fs = require('fs');
-const rawfile=fs.readFileSync('data/data.json');
-let data = JSON.parse(rawfile);
+const data = require('./data/data.json');
 
 
  /**
@@ -116,7 +114,7 @@ function get_object_by_serial(serial){
 /**
  * Cette fonction est exécutée lorsqu'on demande l'adresse
  * http://localhost:5000/objects/operator/<operator> représentée par la route '/objects/operator/:operator'
- * Elle prend le serial de l'objet en paramètre.
+ * Elle prend l'operateur de l'objet en paramètre.
  * Elle retourne un objet javascript contenant une
  * liste des objets ayant l'opérateur passé en paramètre.
  */
@@ -127,7 +125,7 @@ function get_objects_by_operator(operator){
 /**
  * Cette fonction est exécutée lorsqu'on demande l'adresse
  * http://localhost:5000/types/comm/<comm> représentée par la route '/types/comm/:comm'
- * Elle prend le serial de l'objet en paramètre.
+ * Elle prend le mode de communication de l'objet en paramètre.
  * Elle retourne un objet javascript contenant une liste de types
  * ayant pour mode de communication celui passé en paramètre.
  */
@@ -138,7 +136,7 @@ function get_types_by_comm(comm){
 /**
  * Cette fonction est exécutée lorsqu'on demande l'adresse
  * http://localhost:5000/types/format/<format> représentée par la route '/types/format/:format'
- * Elle prend le serial de l'objet en paramètre.
+ * Elle prend le format des données en paramètre.
  * Elle retourne un objet javascript contenant une liste de types
  * ayant pour un format de données celui passé en paramètre.
  */
@@ -149,7 +147,7 @@ function get_types_by_format(format){
 /**
  * Cette fonction est exécutée lorsqu'on demande l'adresse
  * http://localhost:5000/objects/comm/<comm> représentée par la route '/objects/comm/:comm'
- * Elle prend le serial de l'objet en paramètre.
+ * Elle prend le mode de communication en paramètre.
  * Elle retourne un objet javascript contenant une liste d'objets
  * ayant pour mode de communication celui passé en paramètre.
  */
