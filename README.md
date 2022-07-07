@@ -1,52 +1,31 @@
 # js-module2
 
-Module de formation javascript pour la formation IoT Chambéry
+Module de formation javascript
 
-## Etape 1 : Installer le serveur http
+## Etape 1 : Installer l'API
 
 ### Prérequis 
+
+Forker le projet.
+
+Cloner le dépot dans VS Code et suivre les instructions.
+
 
 Le module de formation nécessite les programmes suivants :
 
 * node js et npm (https://blog.teamtreehouse.com/install-node-js-npm-windows).
 * VS Code
 
-Clonez le dépot dans VS Code et suivez les instructions.
 
 ### Installer le serveur
 
-Dans le dossier du projet, lancez la commande ``` npm install ```
-
-### Lancer le serveur
-
-2 modes de fonctionnement existent pour le serveur :
-
-* ``` npm start ``` : lance le serveur web
-* ``` npm test ``` : lance les tests du serveur
+Suivez les instructions du README disponible dans le dossier API
 
 ## Etape 2 : Créer l'application web
 
-### Arborescence du projet
+Suivez les instructions du README du dossier website
 
-Le projet suit l'arborescence suivante :
+## Etape 3 : Déployer le projet
 
-```
-|_data                      // Données du projet
-|_public                    // Dossier contenant tous les fichiers accessibles
-     |_examples             // Dossier contenant des exampels de pages html
-     |_static
-         |_adminlte         // Dossier contenant les sources du framework Admin LTE
-             |_dist
-                 |_css
-                 |_img
-                 |_js
-             |_plugins
-         |_images           // Dossier contenant les images
-         |_js               // Dossier contenant les scripts javascript
-     |_test                 // Dossier contenant les tests
-|_                          // Racine du projet contenant l'application à lancer
-```
+Sur la base des cours précédents, mettez en ligne l'API et le site sur votre VPS.
 
-### Lancement du serveur
-
-Dans le dossier du projet, lancez la commande ``` npm start ```
