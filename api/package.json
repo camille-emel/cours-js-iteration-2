@@ -4,7 +4,7 @@
   "description": "js campus module 2",
   "scripts": {
     "start": "node app.js 5000",
-    "test": "./node_modules/.bin/mocha -u tdd --exit -b "
+    "test": "mocha -u tdd --exit -b "
   },
   "dependencies": {
     "express": "^4.17.1"
